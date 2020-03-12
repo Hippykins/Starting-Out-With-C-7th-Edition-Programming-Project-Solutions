@@ -1,0 +1,11 @@
+//Solution for Programming Project #1 of Chapter 2
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  
+  int total, var1 = 62, var2 = 99;
+  
+  total = var1 + var2;
+}
