@@ -1,0 +1,20 @@
+//Solution for Programming Project #2 of Chapter 2
+
+#include <iostream>
+#include <iomanip> //Required for formatting
+using namespace std;
+
+int main() {
+
+//We set the rate to a constant because it will not be changed in the program
+const float RATE = 0.62;
+
+double sales = 4600000;
+
+double totalSales = sales * RATE;
+
+//We use fixed and setprecision() to format totalSales to look like an actual dollar amount
+//Fixed removes scientific notation formatting
+//setprecision() determines the number of decimal places displayed
+cout << fixed << setprecision(2) << "East Coast division sales: $" << totalSales << endl;
+}
