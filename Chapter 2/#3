@@ -1,0 +1,20 @@
+//Solution for Programming Project #3 of Chapter 2
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+
+double purchase = 52, totalTax;
+
+const double COUNTY_TAX = 0.02;
+
+const double STATE_TAX = 0.04;
+
+totalTax = (purchase * COUNTY_TAX) + (purchase * STATE_TAX);
+
+cout << fixed << setprecision(2) << "Item purchased: $" << purchase << endl;
+
+cout << fixed << setprecision(2) << "Total tax: $" << totalTax << endl;
+}
