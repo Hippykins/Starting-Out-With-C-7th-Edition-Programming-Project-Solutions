@@ -1,0 +1,21 @@
+//Solution for Programming Project #4 of Chapter 2
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+
+//Declare variables
+double mealCost = 44.50;
+double tax = (6.75 * mealCost) / 100;
+double tip = 15 * (mealCost + tax) / 100;
+
+double totalBill = mealCost + tax + tip;
+
+//Display all variables, formatting ones with longer decimal places
+cout << "Meal cost: " << mealCost << endl;
+cout <<  fixed << setprecision(2) << "Tax: " << tax << endl;
+cout << fixed << setprecision(2) << "Tip: " << tip << endl;
+cout << fixed << setprecision(2) << "Total bill: " << totalBill << endl;
+}
