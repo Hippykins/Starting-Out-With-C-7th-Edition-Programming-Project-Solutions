@@ -1,0 +1,16 @@
+//Solution for Programming Project #6 for Chapter 2
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+
+double payAmount = 1700;
+
+int payPeriods = 26;
+
+double annualPay = payAmount * payPeriods;
+
+cout << "Total annual pay is: $" << fixed << setprecision(2) << annualPay;
+}
