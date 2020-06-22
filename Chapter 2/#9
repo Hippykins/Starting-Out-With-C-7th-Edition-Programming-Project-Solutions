@@ -1,0 +1,19 @@
+//Solution for Programming Project #9 in Chapter 2
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int charSize, intSize, floatSize, doubleSize;
+    
+    charSize = sizeof(char);
+    intSize = sizeof(int);
+    floatSize = sizeof(float);
+    doubleSize = sizeof(double);
+    
+    cout << "Size of char: " << charSize << " byte(s)" << endl;
+    cout << "Size of int: " << intSize << " byte(s)" << endl;
+    cout << "Size of float: " << floatSize << " byte(s)" << endl;
+    cout << "Size of double: " << doubleSize << " byte(s)" << endl;
+}
