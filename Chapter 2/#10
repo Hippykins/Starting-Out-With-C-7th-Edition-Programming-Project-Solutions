@@ -1,0 +1,12 @@
+//Solution for Programming Project #10 in Chapter 2
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double gallons = 12, miles = 350;
+    double mpg = miles / gallons;
+    
+    cout << "The car gets " << setprecision(4) << mpg << " miles per gallon.";
+}
