@@ -1,0 +1,16 @@
+//Solution for Programming Project #17 in Chapter 2
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double sharesNumber = 600, sharesPrice = 21.77, commissionRate = 0.02; 
+    double stockAlone = sharesNumber * sharesPrice;
+    double commission = stockAlone * commissionRate;
+    double total = stockAlone + commission;
+    
+    cout << "The amount paid for the stock alone: $" << fixed << setprecision(2) << stockAlone << endl;
+    cout << "The amount of the commission: $" << fixed << setprecision(2) << commission << endl;
+    cout << "The total amount paid: $" << fixed << setprecision(2) << total;
+}
