@@ -1,0 +1,13 @@
+//Solution for Programming Project #11 in Chapter 2
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double gallons = 20, townMPG = 21.5, highwayMPG = 26.8;
+    double townDistance = gallons * townMPG, highwayDistance = gallons * highwayMPG;
+    
+    cout << "Distance in town: " << townDistance << " miles." << endl;
+    cout << "Distance on a highway: " << highwayDistance << " miles.";
+}
