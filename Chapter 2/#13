@@ -1,0 +1,13 @@
+//Solution for Programming Project #13 in Chapter 2
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double profit = 1.4, price = 12.67; //we set profit to 1.4 so that it can add to the price without any further calculation
+    
+    double sellingPrice = profit * price;
+    
+    cout << "The total price is: $" << setprecision(4) << sellingPrice;
+}
