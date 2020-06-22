@@ -1,0 +1,23 @@
+//Solution for Programming Project #8 in Chapter 2
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    float item1 = 12.95, item2 = 24.95, item3 = 6.95, item4 = 14.95, item5 = 3.95;
+    float sub_total = item1 + item2 + item3 + item4 + item5;
+    float sales_tax = sub_total * 0.06, total_tax = sub_total + sales_tax;
+    
+    cout << "Item 1: $" << fixed << setprecision(2) << item1 << endl;
+    cout << "Item 2: $" << fixed << setprecision(2) << item2 << endl;
+    cout << "Item 3: $" << fixed << setprecision(2) << item3 << endl;
+    cout << "Item 4: $" << fixed << setprecision(2) << item4 << endl;
+    cout << "Item 5: $" << fixed << setprecision(2) << item5 << endl;
+    
+    cout << "Subtotal: $" << fixed << setprecision(2) << sub_total << endl;
+    
+    cout << "Sales Tax: $" << fixed << setprecision(2) << sales_tax << endl;
+    
+    cout << "Total: $" << fixed << setprecision(2) << total_tax << endl;
+}
