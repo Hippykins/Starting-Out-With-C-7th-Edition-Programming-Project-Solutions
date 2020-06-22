@@ -1,0 +1,11 @@
+//Solution for Programming Project #14 in Chapter 2
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Your name\n" 
+    << "Your address\n" 
+    << "Your phone number\n" 
+    << "Your college major\n";
+}
