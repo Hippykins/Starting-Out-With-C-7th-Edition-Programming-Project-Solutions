@@ -1,0 +1,13 @@
+//Solution for Programming Project #12 in Chapter 2
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double acres, feetEquivalence = 43560, newAcre = 389767;
+    
+    acres = newAcre / feetEquivalence;
+    
+    cout << "The field contains " << setprecision(2) << acres << " acres.";
+}
