@@ -1,0 +1,15 @@
+/* Solution for Programming Project #7 in Chapter 2.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    double ocean_rate = 1.5, current_rate;
+    
+    cout << "What is the current ocean level in millimeters?" << endl;
+    cin >> current_rate;
+    
+    cout << "5 years: " << current_rate + ocean_rate * 5 << endl;
+    cout << "7 years: " << current_rate + ocean_rate * 7 << endl;
+    cout << "10 years: " << current_rate + ocean_rate * 10 << endl;
+}
