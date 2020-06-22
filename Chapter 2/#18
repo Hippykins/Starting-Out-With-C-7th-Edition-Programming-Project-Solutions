@@ -1,0 +1,14 @@
+//Solution for Programming Project #18 in Chapter 2
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double customers = 12467, weekPercent = 0.14, citrusPercent = 0.64;
+    int customersWeek = customers * weekPercent;
+    int customersCitrus = customersWeek * citrusPercent;
+    
+    cout << "Customers who purchase one or more energy drinks per week: " << customersWeek << endl;
+    cout << "Above customers who prefer citrus flavored energy drinks: " << customersCitrus;
+}
