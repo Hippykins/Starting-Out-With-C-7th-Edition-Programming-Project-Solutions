@@ -1,0 +1,23 @@
+//Solution for Programming Project #2 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double classACost = 15, classBCost = 12, classCCost = 9;
+    double classATickets, classBTickets, classCTickets;
+    
+    cout << "How many Class A tickets were sold?: ";
+    cin >> classATickets;
+    
+    cout << "How many Class B tickets were sold?: ";
+    cin >> classBTickets;
+    
+    cout << "How many Class C tickets were sold?: ";
+    cin >> classCTickets;
+    
+    double total = (classACost * classATickets) + (classBCost * classBTickets) + (classCCost * classCTickets);
+    
+    cout << "The total is: $" << fixed << setprecision(2) << total;
+}
