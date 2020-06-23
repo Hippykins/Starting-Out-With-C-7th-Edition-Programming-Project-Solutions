@@ -1,0 +1,34 @@
+//Solution for Programming Project #4 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+int main() {
+    string month1, month2, month3;
+    
+    cout << "Enter the 1st month: ";
+    cin >> month1;
+    
+    cout << "Enter the 2nd month: ";
+    cin >> month2;
+    
+    cout << "Enter the 3rd month: ";
+    cin >> month3;
+    
+    double month1Rain, month2Rain, month3Rain;
+    
+    cout << "Enter rainfall amount in inches for " << month1 << ": ";
+    cin >> month1Rain;
+    
+    cout << "Enter rainfall amount in inches for " << month2 << ": ";
+    cin >> month2Rain;
+    
+    cout << "Enter rainfall amount in inches for " << month3 << ": ";
+    cin >> month3Rain;
+    
+    double average = (month1Rain + month2Rain + month3Rain) / 3;
+    
+    cout << "Average rainfall for " << month1 << ", " << month2 << ", and " << month3 << " is: " << fixed << setprecision(2) << average << " inches";
+}
