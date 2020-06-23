@@ -1,0 +1,19 @@
+//Solution for Programming Project #1 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double gallons, miles; 
+    
+    cout << "How many gallons of gas can your car hold?: ";
+    cin >> gallons;
+    
+    cout << "How many miles can it be driven on a full tank?: ";
+    cin >> miles;
+    
+    double mpg = miles / gallons;
+    
+    cout << "The car can get " << fixed << setprecision(2) << mpg << " mpg.";
+}
