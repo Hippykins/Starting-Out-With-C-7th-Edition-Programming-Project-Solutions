@@ -1,0 +1,28 @@
+//Solution for Programming Project #3 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double score1, score2, score3, score4, score5;
+    
+    cout << "Score 1: ";
+    cin >> score1;
+    
+    cout << "Score 2: ";
+    cin >> score2;
+    
+    cout << "Score 3: ";
+    cin >> score3;
+    
+    cout << "Score 4: ";
+    cin >> score4;
+    
+    cout << "Score 5: ";
+    cin >> score5;
+    
+    double average = (score1 + score2 + score3 + score4 + score5) / 5;
+    
+    cout << "Average: " << fixed << setprecision(1) << average;
+}
