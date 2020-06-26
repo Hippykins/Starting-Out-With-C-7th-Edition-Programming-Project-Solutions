@@ -1,0 +1,18 @@
+//Solution for Programming Project #6 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double one_widget_weight = 9.2, pallet_weight, pallet_total_weight, total_widgets;
+    
+    cout << "How much does the pallet weigh by itself?: ";
+    cin >> pallet_weight;
+    
+    cout << "How much does the pallet weigh with the widgets?: ";
+    cin >> pallet_total_weight;
+    
+    total_widgets = (pallet_total_weight - pallet_weight) / one_widget_weight;
+    cout << "The number of widgets on the pallet are " << fixed << setprecision(0) << total_widgets << ".";
+}
