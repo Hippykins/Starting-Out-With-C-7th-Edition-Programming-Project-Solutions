@@ -1,0 +1,16 @@
+//Solution for Programming Project #8 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double insure_rate = 0.8, replace_cost, insure_cost;
+    
+    cout << "Enter the replacement cost: ";
+    cin >> replace_cost;
+    
+    insure_cost = replace_cost * insure_rate;
+    
+    cout << "Minimum amount of recommended insurance: $" << fixed << setprecision(2) << insure_cost;
+}
