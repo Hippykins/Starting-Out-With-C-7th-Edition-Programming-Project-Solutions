@@ -1,0 +1,16 @@
+//Solution for Programming Project #10 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double f, c;
+    
+    cout << "Enter degrees in Celsius: ";
+    cin >> c;
+    
+    f = ((c * 9/5) + 32);
+    
+    cout << "Fahrenheit: " << fixed << setprecision(0) << f;
+}
