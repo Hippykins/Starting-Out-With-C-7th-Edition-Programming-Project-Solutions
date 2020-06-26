@@ -1,0 +1,15 @@
+//Solution for Programming Project #7 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double cookie_calorie = 75, user_cookies, total_calories;
+    
+    cout << "How many cookies did you eat? ";
+    cin >> user_cookies;
+    
+    total_calories = user_cookies * cookie_calorie;
+    cout << "You consumed " << total_calories << " calories.";
+}
