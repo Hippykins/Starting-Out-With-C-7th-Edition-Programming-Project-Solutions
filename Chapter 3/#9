@@ -1,0 +1,35 @@
+//Solution for Programming Project #9 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double loan_payment, insurance, gas, oil, tires, maintenance, total_monthly, total_annually;
+    
+    cout << "Enter monthly payments for the following: \n";
+    
+    cout << "Loan payment: ";
+    cin >> loan_payment;
+    
+    cout << "Insurance: ";
+    cin >> insurance;
+    
+    cout << "Gas: ";
+    cin >> gas;
+    
+    cout << "Oil: ";
+    cin >> oil;
+    
+    cout << "Tires: ";
+    cin >> tires;
+    
+    cout << "Maintenance: ";
+    cin >> maintenance;
+    
+    total_monthly = loan_payment + insurance + gas + oil + tires + maintenance;
+    cout << "Total monthly costs: $" << fixed << setprecision(2) << total_monthly << endl;
+    
+    total_annually = total_monthly * 12;
+    cout << "Total annual costs: $" << fixed << setprecision(2) << total_annually;
+}
