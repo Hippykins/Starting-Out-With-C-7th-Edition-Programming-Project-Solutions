@@ -1,0 +1,18 @@
+//Solution for Programming Project #11 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double YEN_PER_DOLLAR = 107.74, EUROS_PER_DOLLAR = 0.89, usd, usd_converted; //conversion rates as of June 2020
+    
+    cout << "Enter USD: ";
+    cin >> usd;
+    
+    usd_converted = usd * YEN_PER_DOLLAR;
+    cout << "USD to Yen: ¥" << fixed << setprecision(2) << usd_converted << endl;
+    
+    usd_converted = usd * EUROS_PER_DOLLAR;     //we use the same variable because it can be overloaded
+    cout << "USD to Euro: €" << fixed << setprecision(2) << usd_converted;
+}
