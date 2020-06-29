@@ -1,0 +1,22 @@
+//Solution for Programming Project #14 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double total_value, assessment_value, as_value_rate = 0.6, rate, tax, payment;
+    
+    cout << "Enter the property's total value: ";
+    cin >> total_value;
+    
+    cout << "Enter the property's current tax rate: ";
+    cin >> rate;
+    
+    assessment_value = as_value_rate * total_value - 5000;
+    tax = assessment_value * rate / 100;
+    payment = tax / 4;
+    
+    cout << "Annual Property Tax: $" << fixed << setprecision(2) << tax << endl;
+    cout << "Quarterly Tax Payment: $" << fixed << setprecision(2) << payment;
+}
