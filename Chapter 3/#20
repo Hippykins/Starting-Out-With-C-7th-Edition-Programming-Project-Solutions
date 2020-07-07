@@ -1,0 +1,21 @@
+//Solution for Programming Project #20 in Chapter 3
+
+#include <iostream>
+#include <iomanip>  
+#include <cmath>    
+using namespace std;
+
+int main(){
+    double angle; 
+    
+    cout << "Insert angle in radians: ";    
+    cin >> angle;   
+    
+    cout << setprecision(4) << fixed; 
+
+    cout << "The sine of the angle is: " << sin(angle) << endl;     
+    cout << "The cosine of the angle is: " << cos(angle) << endl;   
+    cout << "The tangent of the angle is: " << tan(angle) << endl;  
+
+    return 0;
+}
