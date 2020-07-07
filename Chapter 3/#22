@@ -1,0 +1,48 @@
+//Solution for Programming Project #22 in Chapter 3
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    //declare variables needed
+    string name, city, college, profession, animal, petName;
+    int age;
+
+    //prompt user to enter data then read
+    cout << "Enter your name: ";
+    getline(cin, name);
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout << "Enter the name of a city: ";
+    cin.ignore();
+    getline(cin, city);
+
+    cout << "Enter the name of a college: ";
+    getline(cin, college);
+
+    cout << "Enter a profession: ";
+    getline(cin, profession);
+
+    cout << "Enter a type of animal: ";
+    getline(cin, animal);
+
+    cout << "Enter a pet's name: ";
+    getline(cin, petName);
+
+    //display story with user input in correct spots
+    cout << "\nThere was once a person named " << name;
+    cout << " who lived in " << city << ". At the age of\n";
+    cout << age << " " << name << " went to college at ";
+    cout << college << ". " << name << " graduated and went to";
+    cout << " work\nas a " << profession << ". Then, " << name;
+    cout << " adopted a(n) " << animal << " named " << petName;
+    cout << ". They\nboth lived happily ever after!\n";
+
+    //return 0 to mark successful termination
+    return 0;
+}
