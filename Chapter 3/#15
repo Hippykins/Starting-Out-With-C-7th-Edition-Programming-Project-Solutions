@@ -1,0 +1,40 @@
+//Solution for Programming Project #15 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+#include <ctime>    //to generate seed
+#include <cstdlib>  //to generate random number
+using namespace std;
+
+int main()
+{
+    //declare variables needed
+    int num1, num2;
+
+    //get seed
+    unsigned seed = time(0);
+
+    //seed random number generator
+    srand(seed);
+
+    //generate random number in range 1 to 499
+    num1 = (rand() % (499 - 1 + 1)) + 1;
+    num2 = (rand() % (499 - 1 + 1)) + 1;
+
+    //display calculation
+    cout << setw(4) << num1 << endl;
+    cout << "+" << setw(3) << num2 << endl;
+    cout << "----" << endl;
+    cout << "Press [Enter] when ready to reveal correct answer...\n";
+
+    //wait for user to hit enter
+    cin.get();
+    cout << setw(4) << num1 << endl;
+    cout << "+" << setw(3) << num2 << endl;
+    cout << "----" << endl;
+    cout << setw(4) << num1 + num2;
+
+
+    //return 0 to mark successful termination
+    return 0;
+}
