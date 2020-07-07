@@ -1,0 +1,37 @@
+//Solution for Programming Project #21 in Chapter 3
+
+#include <iostream>
+#include <iomanip>  
+using namespace std;
+
+int main(){
+    int stocksNumber = 1000;    
+    double purchasePrice = 45.50; 
+    double commissionPercentage = 0.02; 
+    double sellPrice = 56.90;
+
+    //amount Joe paid for the stocks alone
+    double buyTransaction = stocksNumber * purchasePrice;
+
+    //amount Joe paid for the commission when buying
+    double buyCommission = buyTransaction * commissionPercentage;
+
+    //amount Joe got for selling the stocks
+    double sellTransaction = stocksNumber * sellPrice;
+
+    //amount Joe paid for the commission when selling
+    double sellCommission = sellTransaction * commissionPercentage;
+
+    //amount of profit Joe made
+    //calculated as Price of Selling - Cost of Buying - Commission When Buying - Commission when Selling
+    double profit = sellTransaction - buyTransaction - buyCommission - sellCommission;
+
+    cout << setprecision(2) << fixed; //display exactly 2 digits after the decimal point
+    cout << "Joe paid $" << setw(10) << buyTransaction << "  to buy the stock." << endl; //set width to 10 for better formatting
+    cout << "Joe paid $" << setw(10) << buyCommission << "  to the broker when buying." << endl; //and display what the exercise requires
+    cout << "Joe got  $" << setw(10) << sellTransaction << "  for selling the stock." << endl;
+    cout << "Joe paid $" << setw(10) << sellCommission << "  to the broker when selling." << endl;
+    cout << "Joe made $" << setw(10) << profit << "  overall." << endl;
+
+    return 0;
+}
