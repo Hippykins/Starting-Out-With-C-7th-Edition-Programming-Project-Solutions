@@ -1,0 +1,41 @@
+//Solution for Programming Project #19 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>    //for pow() function
+
+using namespace std;
+
+int main()
+{
+    //named constant for PI
+    const double GREEK_PI = 3.14159,
+                 AREA_PER_SLICE = 14.125;
+
+    //declare variables needed
+    double totalArea, singleArea, diameter, pizzas;
+    int people;
+
+    //prompt user for input then read
+    cout << "Enter the diameter of desired pizzas in inches: ";
+    cin >> diameter;
+
+    cout << "Enter the number of people in the party: ";
+    cin >> people;
+
+    //calculate total area needed
+    totalArea = people * 4 * AREA_PER_SLICE;
+
+    //calculate area of a single pizza
+    singleArea = GREEK_PI * pow((diameter/2.0), 2);
+
+    //calculate how many pizzas
+    pizzas = totalArea / singleArea;
+
+    //display output
+    cout << setprecision(1) << fixed;
+    cout << "You need " << pizzas << " pizzas.\n";
+
+    //return 0 to mark successful termination
+    return 0;
+}
