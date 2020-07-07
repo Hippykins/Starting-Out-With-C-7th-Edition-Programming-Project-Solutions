@@ -1,0 +1,39 @@
+//Solution for Programming Project #16 in Chapter 3
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>    //for pow() function
+
+using namespace std;
+
+int main()
+{
+    //declare variables needed
+    double amount, principal, rate, period;
+
+    //prompt user to enter input then read
+    cout << "Enter principal amount: $";
+    cin >> principal;
+
+    cout << "Enter interest rate: ";
+    cin >> rate;
+
+    cout << "Enter number of times interest is compounded: ";
+    cin >> period;
+
+    //calculate amount using formula
+    amount = principal * pow((1 + rate/period), period);
+
+    //display report
+    cout << setprecision(3);
+    cout << "\nInterest Rate:\t\t" << setw(8) << rate*100 << "%\n";
+    cout << "Times compounded:\t" << setw(8) << period << endl;
+    cout << fixed << setprecision(2);
+    cout << "Principal:\t\t$" << setw(8) << principal << endl;
+    cout << "Interest:\t\t$" << setw(8) << amount - principal << endl;
+    cout << "Amount in Savings:\t$" << setw(8) << amount << endl;
+
+
+    //return 0 to mark successful termination
+    return 0;
+}
