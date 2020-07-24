@@ -1,0 +1,32 @@
+//Solution for Programming Project #4 in Chapter 4
+
+#include <iostream>
+using namespace std;
+int main()
+ {
+     double length, width, area1, area2;
+
+     cout << "Enter length and width of first rectangle: ";
+     cin >> length >> width;
+
+     area1 = length * width;
+
+     cout << "Enter length and width of second rectangle: ";
+     cin >> length >> width;
+
+     area2 = length * width;
+
+     //use if/else if statements to determine between
+     //three scenarios and print message on screen accordingly
+     if (area1 < area2){
+        cout << "The second rectangle has greater area.\n";
+     }
+     else if(area1 > area2){
+        cout << "The first rectangle has greater area.\n";
+     }
+     else{
+        cout << "Both rectangles have same area.\n";
+     }
+
+     return 0;
+ }
