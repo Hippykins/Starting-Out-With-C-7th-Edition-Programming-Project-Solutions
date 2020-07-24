@@ -1,0 +1,34 @@
+//Solution for Programming Project #5 in Chapter 4
+
+#include<iostream>
+using namespace std;
+int main()
+ {
+     //declare variables to store user input and BMI
+     double weight, height, BMI;
+
+     //prompt user to enter data and read from keyboard
+     cout << "Enter weight in pounds:\n";
+     cin >> weight;
+     cout << "Enter height in inches:\n";
+     cin >> height;
+
+     //calculate BMI using the formula
+     BMI = weight * 703 / (height*height);
+     
+     //use if/else if statements to
+     //determine between scenarios
+     //and display message on screen accordingly
+     if (BMI <= 18.5){
+        cout << "You are underweight.\n";
+     }
+     else if (BMI > 18.5 && BMI <= 25){
+        cout << "Your weight is optimal.\n";
+     }
+     else{
+        cout << "You are overweight.\n";
+     }
+
+     //return 0 to mark successful completion of program
+     return 0;
+ }
